@@ -1,5 +1,101 @@
-h1{
-	color:red;
-	font-size:30px;
+* {
+	box-sizing:border-box;
+}
+
+body{
+	margin:auto;
 	font-family:helvetica;
+	width:70%;
+}
+
+/*||||| HEADERS |||||*/
+
+h1{
+	color: red;
+	font-size: 30px;
+	font-family: avenir;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+div{
+	width:200px;
+	height: 200px;
+	background-color:lightpink;
+	padding:10px;
+	border: 1px solid green;
+}
+
+/*||||| Section IDS |||||*/
+
+	#staggered {
+		position: relative;
+	}
+
+/*||||| DIV IDS |||||*/
+
+/* A */
+	#a1{
+		display:block;
+		background-color:lightyellow;
+	}
+
+	#a2{
+		display:inline-block;
+		background-color:lightgray;
+	}
+
+	#a3{
+		display:inline-block;
+		background-color:lightblue;
+	}
+
+	#a4{
+		display;none;
+		background-color:lightpink;
+	}
+
+	#a5{
+		width: 400px;
+		height: 400px;
+		background-color:lightgreen;
+		padding: 50px;
+	}
+
+/* B */
+
+	#b1{
+		width: 300px;
+		height: 300px;
+	}
+
+/* C */
+
+	#c1{
+		position:absolute;
+	}
+
+	#c2{
+		position:absolute;
+		top: 50px;
+		left: 50px;
+	}
+
+	#c3{
+		position:absolute;
+		top: 100px;
+		left: 100px;
+	}
+
+footer{
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	width:  100%;
+	height: 100px;
+	background-color: lightyellow;
+	text-align: center;
+	padding-top: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
