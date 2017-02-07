@@ -1,33 +1,22 @@
 *{
-	padding-top:15px;
 	box-sizing:border-box;
 }
 
-/*||| Text \\\*/
 
-	a{
-		opacity:0.5
-		text-decoration:none;
-		color:green;
-	}
-	
-	a:hover{
-		transition: .5s ease-in-out;
-		opacity:1;
-	}
-
-	/* Body */ 
-
-	body{
+body{
+		width:60%;
+		margin:auto;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 14pt;
-		background-color:red;
 		background-image: url("assets/media/asfalt-light.png");
 		background-repeat: repeat;
 		margin-top:15px;
+		padding-bottom:15px;
 	}
 
-	/* Headers */
+	p{
+		line-height:200%;
+	}
 
 	h1{
 		font-family: 'Oswald', sans-serif;
@@ -44,16 +33,10 @@
 		text-transform:uppercase;
 	}
 
+	
 
-	.subhead{
-		text-transform:uppercase;
-	}
 
 /*||| Divs |||*/
-
-	div{
-		width: 70%;
-	}
 
 	#heading{
 		color: white;
@@ -68,6 +51,8 @@
 	}
 
 
-	
-
-
+	#footer{
+		width:100%;
+		text-align: center;
+		padding:30px;
+	}
