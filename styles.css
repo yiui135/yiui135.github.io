@@ -8,7 +8,6 @@
 	a{
 		opacity:0.5
 		text-decoration:none;
-		color:green;
 	}
 	
 	a:hover{
@@ -21,8 +20,8 @@
 	body{
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 14pt;
-		background-color:red;
-		background-image: url("assets/media/asfalt-light.png");
+		background-color: #ffffff;
+		background-image: url("https://www.transparenttextures.com/patterns/double-lined.png");
 		background-repeat: repeat;
 		margin-top:15px;
 	}
