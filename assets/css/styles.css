@@ -30,6 +30,7 @@ body{
 		letter-spacing: 1pt;
 		text-transform:uppercase;
 		text-align: center;
+		font-weight:semibold;
 	}
 
 	h3{
@@ -39,6 +40,7 @@ body{
 		letter-spacing: 1pt;
 		text-transform:uppercase;
 		text-align: left;
+		font-weight:normal;
 	}
 
 	
