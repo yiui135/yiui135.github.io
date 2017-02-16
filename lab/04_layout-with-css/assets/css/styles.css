@@ -1,0 +1,127 @@
+*{
+	box-sizing: border-box;
+}
+
+/* ||||| WRAPPERS |||||*/
+body{
+	background-color: AliceBlue;
+	padding-top: 80px;
+}
+
+main{
+	font-size: 0;
+	width: 100%;
+	min-width: 760px;
+	max-width: 1240px;
+	margin: auto;
+	padding:20px;
+	
+}
+
+/* ||||| HEADLINES |||||*/
+
+h1{
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+
+/* ||||| NAVIGATION |||||*/
+
+nav{
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	width:300px;
+}
+
+nav a {
+	background-color: AntiqueWhite;
+	color: black;
+	padding: 10px;
+	vertical-align: center;
+	display: inline-block;
+	border-bottom: 2px solid GoldenRod;
+	
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: sans-serif;
+	text-align: center;
+
+	margin-bottom: 10px;
+	transition: background-color 0.5s;
+	transition: padding 0.5s;
+
+}
+
+nav a:hover {
+	background-color: LightPink;
+	padding:12px;
+	
+}
+
+nav a:active {
+	background-color: white;
+	border-color:white;
+	
+}
+
+/* ||||| COLUMNS |||||*/
+
+.col{
+	background-color: PaleGoldenRod;
+
+	font-size: 20px;
+	font-family: sans-serif;
+
+	margin: 0px 10px 20px 10px;
+	border-top: 2px solid GoldenRod;
+	display: inline-block;
+
+	vertical-align: top;
+	padding:5px;
+
+}
+
+.nest{
+	font-size: 0;
+	background-color:lightblue;
+}
+
+.col img, .col iframe{
+	width:100%;
+	vertical-align: top;
+}
+
+.col iframe{
+	height: 300px;
+}
+
+
+.col-1of6{
+	width: calc(16.666% - 20px);
+}
+
+.col-2of6{
+	width: calc(33.333% - 20px);
+}
+
+.col-3of6{
+	width: calc(50% - 20px);
+}
+
+.col-4of6{
+	width: calc(66.666% - 20px);
+}
+
+.col-5of6{
+	width: calc(83.333% - 20px);
+}
+
+.col-6of6{
+	width: calc(100% - 20px);
+}

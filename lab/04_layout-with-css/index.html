@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<!--|||||||||HEAD|||||||||-->
+
+	<head>
+		<title>Layouts with CSS</title>
+
+		<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+<!--|||||||||BODY|||||||||-->
+	
+	<body>
+		<header>
+			<nav>
+				<a href="#">Top</a>
+				<a href="#row-one">Row 1</a>
+				<a href="#row-two">Row 2</a>
+				<a href="#row-three">Row 3</a>
+				<a href="#row-four">Row 4</a>
+				<a href="#row-five">Row 5</a>
+				<a href="#row-six">Row 6</a>
+			</nav>
+
+			<h1>he smile</h1>
+
+		</header>
+
+		<main>
+			
+		<!--6 columns-->
+			<section id="row-one">
+				<div class="col col-1of6"><img src="assets/media/1200wide.png"></div>
+				<div class="col col-1of6">.col-2of6</div>
+				<div class="col col-1of6">.col-3of6</div>
+				<div class="col col-1of6">.col-4of6</div>
+				<div class="col col-2of6 nest">
+					<div class="col col-3of6">.col-5of6</div>
+					<div class="col col-3of6">.col-6of6</div>
+
+				</div>
+			</section>
+		
+		<!--3 columns-->
+			<section id="row-two">
+				<div class="col col-2of6"><img src="assets/media/1200wide.png"></div>
+				<div class="col col-2of6">.col-2of6</div>
+				<div class="col col-2of6">.col-2of6</div>
+			</section>
+
+		<!--2 columns-->
+			<section id="row-three">
+				<div class="col col-3of6"><iframe src="https://www.google.com/maps/embed"></iframe></div>
+				<div class="col col-3of6">.col-3of6</div>
+			</section>
+
+		<!--2 columns, one 5/6 and one 1/6-->
+			<section id="row-four">
+				<div class="col col-5of6"><img src="assets/media/1200wide.png"></div>
+				<div class="col col-1of6">.col-1of6</div>
+			</section>
+		
+		<!--1 column-->
+			<section  id="row-five">
+				<div class="col col-6of6"><img src="assets/media/1200wide.png"></div>
+			</section>
+
+			<section  id="row-six">
+				<div class="col col-6of6"><img src="assets/media/1200wide.png"></div>
+			</section>
+		
+		</main>
+	</body>
+
+</html>
