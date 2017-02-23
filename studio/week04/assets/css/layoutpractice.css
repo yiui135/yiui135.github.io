@@ -1,0 +1,40 @@
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	font-family: 'Sansita', sans-serif;
+	font-weight:700;
+	font-size:70pt;
+	text-align:center;
+	color:red;
+	mix-blend-mode: color-dodge;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	width: 700px;
+	margin:auto;
+	margin-bottom:60px;
+	background-image:url("../media/kermitrain.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 1%;
+	background-size: 60%;
+}
+
+p{
+	min-width:300px;
+	max-width:550px;
+	text-align:justify;
+	margin:auto;
+	padding:25px;
+	line-height:18pt;
+}
+
+main{
+	background-color:lightpink;
+	width:60%;
+	min-width:400px;
+	max-width:550px;
+	margin:auto;
+}

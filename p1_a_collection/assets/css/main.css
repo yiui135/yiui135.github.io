@@ -1,0 +1,164 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+/*||| Header |||*/
+
+header{
+	width: 100%;
+	min-width: 750px;
+	background-color: #D0011B;
+	height: 200px;
+	padding: 50px;
+	margin: auto;
+
+	blend-mode: multiply;
+
+	color: white;
+	text-align: center;
+	font-family: 'Domine', serif;
+	line-height: 40pt;
+
+}
+
+/*||| Body |||*/
+
+body{
+	background-image: url("../media/streetview.jpg");
+	background-color: #FBF9F4;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+
+	font-family: 'Crimson Text', serif;
+	text-align:justify;
+}
+
+
+/*||| Text |||*/
+
+h1{
+	font-size:42pt;
+	font-weight: 700;
+}
+
+h2{
+	font-family: 'Domine', serif;
+	font-size:20pt;
+	text-transform: uppercase;
+	text-align:center;
+	font-weight: 400;
+	color: #8E1F2D;
+}
+
+h3{
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-weight: 400;
+	text-align: center;
+
+	font-size:16pt;
+	line-height:30pt;
+
+}
+
+
+p{
+	font-size: 16px;
+	text-align: justify;
+}
+
+
+/*||| DIVs |||*/
+
+div{
+	width:750px;
+	margin:auto;
+	padding:10px;
+}
+
+#box{
+	border: 3px solid #7D5B4D;
+	background-color:#FBF9F4;
+	overflow:hidden;
+	height:1500px;
+	margin-top:40px;
+	margin-bottom:60px;
+}
+
+	/*||| ONE AND TWO COLUMN |||*/
+
+	.col1of3{
+		width: calc(33.333% - 3px);
+		display:inline-block;
+		vertical-align: top;
+		overflow: scroll;
+		height:300px;
+		padding-bottom:10px;
+		padding-top:20px;
+	}
+
+	.col2of3{
+	width: calc(66.666% - 5px);
+	display:inline-block;
+	vertical-align: top;
+	height: 300px;
+	overflow: scroll;
+	padding-bottom:10px;
+	padding-top:20px;
+	margin-bottom:10px;
+	}
+
+	.col2of3 img{
+		width:100%;
+	}
+
+
+/*||| Navigation |||*/
+
+nav{
+	padding-bottom:10px;
+	margin-bottom:10px;
+	margin-top: 10px;
+	width: calc(33.333% - 5px);
+	display:inline-block;
+
+	font-family: 'Domine', serif;
+	text-align:center;
+	font-size: 13pt;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+/*||| HR Dividers |||*/
+
+.thick{ 
+	border-top: 2px solid #7D5B4D;
+	margin-left: -10px;
+	width:750px;
+}
+
+.thin{ 
+	border-top: 1px solid #7D5B4D;
+}
+
+.small{
+	border-top: 1px solid #7D5B4D;
+	width: 30px;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+/*||| LINKS |||*/
+
+a{
+	text-decoration: none;
+	color: #7D5B4D;
+	transition: color 0.5s;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #D0011B;
+}
