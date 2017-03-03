@@ -4,18 +4,60 @@
 
 body{
 	padding: 20px;
-	margin: 0 auto;
+	margin-left:20%;
+	width:1000px;
+}
+
+div{ 
+	width:450px; 
+	display:inline-block;
+	vertical-align:top;
+	margin-left:20px;
+}
+
+#content1{
+
+	height:505px;
+	overflow:hidden;
+
+}
+#content2{
+
+	height:505px;
+	overflow:scroll;
+	margin-top: -1px;
+
 }
 
 h1{
-	font-family: "Harriet Display Regular Italic";
+	/*font-family: 'Playfair Display', serif;]
+	font-weight: 700;*/
+	font-family: "Harriet Display Medium Italic";
 	font-weight: normal;
 	font-style: normal;
+	font-size: 60pt;
+	color: lightcoral;
+	line-height:60pt;
 }
-}
+
+h3{font-family: "Harriet Text Light";
+	font-weight: normal;
+	font-style: normal;
+	margin-left:50px;
+	line-height:10pt;}
 
 
 p{
 	max-width: 500px;
+	min-width:400px;
 
+	font-family: 'Asap', sans-serif;
+	font-size: 12pt;
+	text-align:justify;
+	line-height:16pt;
+
+}
+
+img{
+	width:400px;
 }
