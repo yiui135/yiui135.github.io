@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	padding: 20px;
+	margin: 0 auto;
+}
+
+h1{
+	font-family: "Harriet Display Regular Italic";
+	font-weight: normal;
+	font-style: normal;
+}
+}
+
+
+p{
+	max-width: 500px;
+
+}
