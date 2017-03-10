@@ -1,0 +1,130 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 4px;
+	margin-right:0;
+	font-family: sans-serif;
+}
+
+header{
+	position: fixed;
+	left: 20px;
+	bottom: 10px;
+
+}
+
+/*|||||||||MONITOR|||||||||*/
+
+.label{
+	display: inline-block;
+}
+
+	.label.active{
+		background-color: lightpink;
+	}
+	.label.inactive{
+		background-color: lightblue;
+	}
+
+.monitor{
+	display: inline-block;
+	background-color: white;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.prompt{
+	display: inline-block;
+	background-color: lightyellow;
+	padding: 10px;
+	border: 1px dashed black;
+
+	animation-name: pulse;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+}
+
+/*|||||||||BLOCKS|||||||||*/
+
+.block{
+	display: inline-block;
+	border: 1px solid black;
+}
+
+	.block.yellow{
+		background-color:gold;
+	}
+
+	.block.black{
+		background-color:black;
+
+	}
+
+/*|||||||||ANIMATION|||||||||*/ 
+
+@keyframes pulse{
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+
+/*|||||||||RESPONSIVES|||||||||*/
+
+/*--Small mobile device--*/
+
+@media (max-width: 480px) {
+	.block{
+		width: calc(20% - 4px);
+		padding-top: calc(20% - 4px);
+	}
+
+	.block:hover{
+		background-color: lightpink;
+	}
+
+	.label.inactive{
+		display: none;
+	}
+}
+
+/*--In between--*/
+
+@media (min-width:481px) and (max-width:991px){
+	.block{
+		width: calc(10% - 4px); /* REMEMBER SPACES BESIDE MATH SIGNS */
+		padding-top:10%;
+	}
+
+	.block:hover{
+		background-color: lightblue;
+	}
+
+	.label.active{
+		display: none;
+	}
+
+	.prompt{
+		display: none;
+	}
+}
+
+/*--Small desktop--*/
+
+@media (min-width: 992px) {
+	.block{
+		width: calc(5% - 4px);
+		padding-top: calc(5% - 4px);
+	}
+
+	.block:hover{
+		background-color: lightpink;
+	}
+
+	.label.inactive{
+		display: none;
+	}
+}

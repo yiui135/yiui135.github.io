@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.popup{
+	width: 300px;
+	top: 45%;
+	margin:auto;
+	margin-left: calc(50% - 150px);
+	position:fixed;
+	padding:20px;
+
+	background-color: white;
+	border: 1px dashed black;
+
+	text-align:center;
+	font-size: 21pt;
+
+}
+
+.blob{
+	background-color: lightpink;
+	margin: auto;
+	transition: height 2s;
+	transition: width 2s;
+}
+
+/*|||||||||ANIMATION|||||||||*/ 
+
+@keyframes pulse{
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes pinktoblue{
+	from {background-color: lightpink;}
+	to {background-color: lightblue;}
+}
+
+@keyframes toptobottom{
+	0% {top: 0;}
+	25% {top: 200px;}
+	90% {top: 800px;}
+	100%{top: 1000px;}
+}
+
+/*|||||||||RESPONSIVES|||||||||*/
+
+
+/*--Fullscreen--*/
+@media (min-width: 1800px){
+	.blob{
+		width: 2100px;
+		height: 1080px;
+		margin: auto;
+
+	}
+}
+
+@media (max-width: 1799px){
+	.blob{
+		width: 500px;
+		height: 500px;
+		border-radius:250px;
+		background-color:lightblue;
+
+		top: calc(50% - 250px);
+
+		animation-name: pinktoblue;
+		animation-duration: 2s;
+
+		animation-name: toptobottom;
+		animation-duration: 2s;
+	}
+}
