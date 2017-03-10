@@ -97,13 +97,13 @@ div.content{
 	background-color:white;
 	padding:4px;
 	padding-left:15px;
-	margin:auto;
 	margin-bottom:200px;
 	margin-top:10px;
 }
 
 div.list{
-	margin: auto;
+	padding-top: 40px;
+	margin: 0 auto;
 	min-width: 250px;
 	max-width:320px;
 }
