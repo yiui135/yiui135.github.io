@@ -11,8 +11,6 @@ body{
 	font-family: sans-serif;
 }
 
-/*||||||||| POP UP & BLOB |||||||||*/ 
-
 .popup{
 	width: 300px;
 	top: 45%;
@@ -36,9 +34,6 @@ body{
 .blob{
 	background-color: lightpink;
 	margin: auto;
-	transition: background-color 2s;
-	transition: height 2s;
-	transition: width 2s;
 }
 
 /*|||||||||ANIMATION|||||||||*/ 
@@ -54,63 +49,59 @@ body{
 	to {background-color: lightblue;}
 }
 
-@keyframes bluetoyellow{
-	from {background-color: lightblue;}
-	to {background-color: #ffec8b;}
-}
-
-@keyframes widthchange{
-	0% {width: 2100px;}
-	100%{width: 200px;}
+@keyframes toptobottom{
+	0% {top: 0;}
+	25% {top: 200px;}
+	90% {top: 800px;}
+	100%{top: 1000px;}
 }
 
 @keyframes heightchange{
 	0% {height: 1200px;}
+	25% {height:1000px;}
+	90% {height:600px;}
 	100%{height: 200px;}
 }
 
-
 /*|||||||||RESPONSIVES|||||||||*/
 
-/*--Fullscreen--*/
 
-@media (min-width: 1400px){
+
+
+
+/*--Fullscreen--*/
+@media (min-width: 1200px) and (min-height: 800px) {
+	}
 	.blob{
 		width: 2100px;
-	}
-
-}
-
-@media (min-height: 750px){
-	.blob{
 		height: 1080px;
+		margin: auto;
+		transition: height 2s;
+		transition: width 2s;
+
+		top: -40px;
+
 	}
-}
 
-
-@media (min-width: 1400px) and (min-height: 750px){
 	.popup{
 		visibility: show;
 	}
-
 }
 
-/*--Width change wide-thin --*/
-
-@media (max-width: 1400px){
+@media (max-width: 1199px){
 	.blob{
 		width: 200px;
-
+		height:100%;
 		background-color:lightblue;
 
-		animation-name: widthchange;
+		animation-name: pinktoblue;
 		animation-duration: 2s;
 
-		animation-name: pinktoblue;
-		animation-duration: 1s;
-
+		animation-name: toptobottom;
+		animation-duration: 2s;
+		
+		transition: height 2s;
 		transition: width 2s;
-		margin: auto;
 	}
 
 	.popup{
@@ -118,26 +109,17 @@ body{
 	}
 }
 
-/*--Height change--*/
-
-@media (max-height: 750px){
+@media (max-height: 799px){
 	.blob{
-		height: 200px;
-		background-color:#ffec8b;
-
-		animation-name: heightchange;
-		animation-duration: 2s;
-
-		animation-name: bluetoyellow;
-		animation-duration: 1s;
+		height:200px;
+		width:100%;
 
 		transition: height 2s;
-
-		margin: auto;
+		transition: width 2s;
 
 	}
+
 	.popup{
 		visibility: hidden;
 	}
-
-}
+}*/
