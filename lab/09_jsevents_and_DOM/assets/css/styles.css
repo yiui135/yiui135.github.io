@@ -1,0 +1,19 @@
+header{
+	position: fixed;
+	padding: 30px;
+	top: 0;
+	left: 0;
+}
+
+
+img{
+	height:300px;
+}
+
+.sticker{
+	background-image: url("../../media/kermitburrito.png");
+	width:500px;
+	height:500px;
+	position: fixed;
+	
+}
