@@ -5,16 +5,35 @@ var html = document.documentElement;
 //||| TWO: Checkerboard ||
 
 function checkerboard(width,height){
-	
-	var width = 4
-	var height = 3
 
 	console.log("# # # #");
 	console.log("# # # #");
 	console.log("# # # #");
 };
 
-//console.log
+//||| TWO: Checkerboard *REDO*||
+
+function checkerboard1(width,height){
+	var checkerboard = "";
+
+	for (j = 0; j < height; j++){
+		if (j % 2) {
+			if ( i % 2 ) {
+				checkerboard = checkerboard + "#";
+			} else {
+				checkerboard = checkerboard + " ";
+			}
+		} else {
+			for (j = 0; j < height; j++){
+				if (j % 2) {
+				if ( i % 2 ) {
+					checkerboard = checkerboard + "#";
+				} else {
+					checkerboard = checkerboard + " ";
+				}
+		}
+};
+
 
 //||| THREE: Triangle ||
 
