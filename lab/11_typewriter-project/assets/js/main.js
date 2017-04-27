@@ -1,173 +1,233 @@
 var html = document.documentElement;
 
-var container = document.getElementById("container");
-
 var letters = {
     KeyA: {
     	flower: 'Angelica',
     	definition: 'inspiration',
-    	url: '../media/angelica1.jpg'
+    	url: 'assets/media/angelica1.jpg'
     },
 
     KeyB: {
     	flower: 'Buttercup',
     	definition: 'ingratitude',
-    	url: '../media/buttercup1.jpg'
+    	url: 'assets/media/buttercup1.jpg'
     },
 
     KeyC: {
     	flower: 'Chamomile',
-    	definition: 'inspiration',
-    	url: '../media/chamomile1.jpg'
+    	definition: 'energy in adversity',
+    	url: 'assets/media/chamomile1.jpg'
     },
 
     KeyD: {
     	flower: 'Dahlia',
     	definition: 'dignity',
-    	url: '../media/dahlia1.jpg'
+    	url: 'assets/media/dahlia1.jpg'
     },
 
     KeyE: {
     	flower: 'Edelweiss',
     	definition: 'noble courage',
-    	url: '../media/edelweiss1.jpg'
+    	url: 'assets/media/edelweiss1.jpg'
     },
 
     KeyF: {
     	flower: 'Forsythia',
     	definition: 'anticipation',
-    	url: '../media/forsythia1.jpg'
+    	url: 'assets/media/forsythia1.jpg'
     },
 
     KeyG: {
     	flower: 'Gardenia',
     	definition: 'refinement',
-    	url: '../media/gardenia1.jpg'
+    	url: 'assets/media/gardenia1.jpg'
     },
 
     KeyH: {
     	flower: 'Hydrangea',
     	definition: 'dispassion',
-    	url: '../media/hydrangea1.jpg'
+    	url: 'assets/media/hydrangea1.jpg'
     },
 
     KeyI: {
     	flower: 'Iris',
     	definition: 'message',
-    	url: '../media/iris1.jpg'
+    	url: 'assets/media/iris1.jpg'
     },
 
     KeyJ: {
     	flower: "Jacob's Ladder",
     	definition: 'come down',
-    	url: '../media/jacobsladder1.jpg'
+    	url: 'assets/media/jacobsladder1.jpg'
     },
 
     KeyK: {
     	flower: 'Kaffir Lily',
     	definition: 'majesty',
-    	url: '../media/kaffirlily1.jpg'
+    	url: 'assets/media/kaffirlily1.jpg'
     },
 
     KeyL: {
     	flower: 'Liatris',
     	definition: 'i will try again',
-    	url: '../media/liatris1.jpg'
+    	url: 'assets/media/liatris1.jpg'
     },
 
     KeyM: {
     	flower: 'Marigold',
     	definition: 'grief',
-    	url: '../media/marigold1.jpg'
+    	url: 'assets/media/marigold1.jpg'
     },
 
     KeyN: {
     	flower: 'Nasturtium',
     	definition: 'impulsive love',
-    	url: '../media/nasturtium1.jpg'
+    	url: 'assets/media/nasturtium1.jpg'
     },
 
     KeyO: {
     	flower: 'Orange Blossom',
     	definition: 'your purity equals your loveliness',
-    	url: '../media/orangeblossom1.jpg'
+    	url: 'assets/media/orangeblossom1.jpg'
     },
 
     KeyP: {
     	flower: 'Peony',
     	definition: 'anger',
-    	url: '../media/peony1.jpg'
+    	url: 'assets/media/peony1.jpg'
     },
 
     KeyQ: {
     	flower: "Queen Anne's Lace",
     	definition: 'fantasy',
-    	url: '../media/queenanne1.jpg'
+    	url: 'assets/media/queenanne1.jpg'
     },
 
     KeyR: {
     	flower: 'Ranunculus',
     	definition: 'you are radiant with charms',
-    	url: '../media/ranunculus1.jpg'
+    	url: 'assets/media/ranunculus1.jpg'
     },
 
     KeyS: {
     	flower: 'Sunflower',
     	definition: 'false riches',
-    	url: '../media/sunflower1.jpg'
+    	url: 'assets/media/sunflower1.jpg'
     },
 
     KeyT: {
     	flower: 'Trillium',
     	definition: 'modest beauty',
-    	url: '../media/trillium1.jpg'
+    	url: 'assets/media/trillium1.jpg'
     },
 
     KeyU: {
     	flower: 'Ursinia',
     	definition: 'share your feelings',
-    	url: '../media/ursinia1.jpg'
+    	url: 'assets/media/ursinia1.jpg'
     },
 
     KeyV: {
     	flower: 'Vetch',
     	definition: 'i cling to thee',
-    	url: '../media/vetch1.jpg'
+    	url: 'assets/media/vetch1.jpg'
     },
 
     KeyW: {
     	flower: 'Water Lily',
     	definition: 'purity of heart',
-    	url: '../media/waterlily1.jpg'
+    	url: 'assets/media/waterlily1.jpg'
     },
 
     KeyX: {
     	flower: 'Xeranthemum',
     	definition: 'unfading rememberance',
-    	url: '../media/xeranthemum1.jpg'
+    	url: 'assets/media/xeranthemum1.jpg'
     },
 
     KeyY: {
     	flower: 'Yarrow',
     	definition: 'cure for a broken heart',
-    	url: '../media/yarrow1.jpg'
+    	url: 'assets/media/yarrow1.jpg'
     },
 
     KeyZ: {
     	flower: 'Zinnia',
     	definition: 'i mourn your absence',
-    	url: '../media/zinnia1.jpg'
+    	url: 'assets/media/zinnia1.jpg'
     }
 };
 
+var container = document.getElementById("container");
+
+var content = document.getElementById("content");
+var glossarycontent = document.getElementById("glossarycontent");
+
+var glossary = document.getElementById("glossary");
+
+
 document.addEventListener('keydown',function(event){
 
-	if(event.keyCode >= 65 && event.keyCode <= 90){
-		
-		console.log(letters[event.code].flower);
-		document.createTextNode(letters[event.code].flower);
+    var img = document.createElement('img');
+        img.src = letters[event.code].url;
+
+    // var imga = document.createElement('img');
+    //     imga.src = letters[KeyA].url;
+
+    var txt = document.createElement('div');
+        txt.innerHTML += letters[event.code].flower+"<br>"+"<h3>"+letters[event.code].definition+"</h3>";
+        txt.classList.add("flower");
+
+    // var txta = document.createElement('div');
+    //     txta.innerHTML += letters[KeyA].flower+"<br>"+"<h3>"+letters[KeyA].definition+"</h3>";
+    //     txta.classList.add("flower");
+
+        if (event.keyCode >= 65 && event.keyCode <= 90){
+
+            console.log(letters[event.code].flower);
+
+            content.prepend(img);
+            content.prepend(txt);
+
+            glossarycontent.appendChild(txt);
+
+            // content.removeChild(img);
+
+        };
 
 
-
-	};
 });
+
+
+glossarybutton.addEventListener("click", function(event) {
+    glossary.style.visibility = "visible";
+    glossary.animation= "fadein 4s";
+});
+
+glossarybutton2.addEventListener("click", function(event) {
+    glossary.style.visibility = "hidden";
+});
+
+
+
+        // if (event.keyCode == 32){
+            
+        //     console.log(letters[KeyA].flower);
+        //     content.appendChild(txta);
+        //     content.appendChild(imga);
+
+        // } else if (event.keyCode >= 65 && event.keyCode <= 90){
+
+        //     console.log(letters[event.code].flower);
+        //     content.appendChild(txt);
+        //     content.appendChild(img);
+        //     console.log(click);
+        //     container.removeChild(container.lastChild);
+        //     // content.removeChild(img);
+
+        // };
+    // };
+
+
+
+

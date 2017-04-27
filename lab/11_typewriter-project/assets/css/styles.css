@@ -1,0 +1,209 @@
+body{
+	background-color: #d1d0c9;
+	background-image: url("https://www.transparenttextures.com/patterns/dark-exa.png");
+	font-family: 'Noto Serif', serif;
+	text-align: center;
+}
+
+img{
+	width:500px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+
+#glossary{
+
+	margin: auto;
+
+	visibility: hidden;
+	width: 550px;
+	height: 100%;
+	background-color: white;
+	top: 0;
+	
+	padding: 10px;
+	outline-style: double;
+	outline-width: 10px;
+	outline-color: gray;
+
+	position: absolute;
+
+
+}
+
+#container{
+	margin: 0 auto;
+	width: 700px;
+	height: 700px;
+	margin-top: 30px;
+
+}
+
+#box{
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 700px;
+	height: 750px;
+	background-color: white;
+	padding: 10px;
+
+	outline-style: double;
+	outline-width: 10px;
+	outline-color: white;
+}
+
+#content{
+	margin: 0 auto;
+	overflow:hidden;
+	height: 450px;
+	vertical-align: center;
+}
+
+#content2{
+	margin: 0 auto;
+	overflow:scroll;
+	height: 600px;
+	vertical-align: center;
+}
+
+.flower{
+	width: 400px;
+	margin: 0 auto;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 100px;
+	font-size: 24pt;
+	text-align: center;
+	font-family: 'Noto Serif', serif;
+	line-height: 50px;
+	vertical-align: center;
+
+	animation: fadein 2s;
+}
+
+.flower2{
+	width: 400px;
+	margin: 0 auto;
+
+	height: 800px;
+	overflow: scroll;
+
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 24pt;
+	text-align: left;
+	font-family: 'Noto Serif', serif;
+	line-height: 50px;
+	vertical-align: center;
+
+	animation: fadein 2s;
+}
+
+img{
+	animation: fadein 2s;
+	margin-bottom: 200px;
+	margin: 0 auto;
+}
+
+.title{
+	margin-top: 200px;
+}
+
+h1{
+	font-family: 'Noto Serif', serif;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-top: 50px;
+}
+
+h2{
+	font-family: 'Noto Serif', serif;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-top: 50px;
+
+	letter-spacing: 1px;
+}
+
+
+h3{
+	font-size: 16pt;
+	text-align: center;
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	font-weight:normal;
+	line-height: 17px;
+
+}
+
+h4{
+	font-size: 16pt;
+	text-align: left;
+	font-family: 'Noto Serif', serif;
+	font-style: italic;
+	font-weight:normal;
+	line-height: 17px;
+	margin-left: 40px;
+}
+
+
+
+button{
+	font-family: 'Noto Serif', serif;
+	font-size: 16pt;
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	background-color: white;
+	border-color: lightgray;
+	border-width:1px;
+	padding: 8px;
+}
+
+#glossarybutton{
+	margin: 0 auto;
+
+	margin-top: -100px;
+	left: 47%;
+}
+
+
+#glossarybutton2{
+
+	margin: 0 auto;
+
+	left: 47%;
+
+	bottom: 80px;
+}
+
+#return{
+	margin: 0 auto;
+
+	left: 45%;
+
+	margin-top: -40px;
+}
+
+#enter{
+	margin: 0 auto;
+
+	left: 48%;
+
+	margin-top: 100px;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+a{
+	text-decoration: none;
+	color: black;
+}
