@@ -16,21 +16,23 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: none;
     overflow: hidden;
     margin-bottom: 40px;
     width: 100%;
     text-align: center;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     display: inline-block;
+    font-family: 'Noto Serif', serif;
 }
 
 /* Change the color of links on hover */
@@ -73,7 +75,7 @@ footer{
 	height: 80px;
 	background-color: lightpink;
 	bottom: 0;
-	position: fixed;
+	margin-top: 50px;
 }
 
 /* |||||| INDEX ONLY |||||| */
@@ -83,6 +85,7 @@ footer{
 	top: 200px;
 	margin: auto;
 	z-index: -10;
+	margin-bottom: 30px;
 
 	overflow: wrap;
 
@@ -90,10 +93,11 @@ footer{
 	font-family: 'Noto Serif', serif;
 	font-weight: normal;
 
-	color: lightgray;
+	color: aliceblue;
 
-	 transform: scale(1.2,1.5);
+	transform: scale(1.2,1.5);
 }
+
 
 #galleryscroll{
 	max-width: 600px;
@@ -107,12 +111,14 @@ footer{
 	height: 400px;
 	overflow: scroll;
 	margin: auto;
+	vertical-align: center;
 }
 
 .blogpreview{
 	height: 400px;
 	margin: auto;
 	text-align: center;
+	vertical-align: center;
 
 }
 
@@ -124,6 +130,7 @@ footer{
 	background-color: goldenrod;
 	overflow: hidden;
 	margin: auto;
+	vertical-align: center;
 }
 
 .buttons{
@@ -135,14 +142,16 @@ footer{
 		position: static;
 		
 		font-size: 24px;
+
+		color: black;
 	}
 }
 
-@media (min-width: 610px) {
+@media (min-width: 601px) {
 	#maintitle{
 		position: absolute;
 
-		font-size: 80pt;
+		font-size: 100pt;
 		letter-spacing: 6px;
 	}
 }
@@ -185,6 +194,8 @@ main{
 
 	.blogheader{
 		width: 700px;
+
+		font-size: 18px;
 	}
 }
 
@@ -203,8 +214,17 @@ h1{
 /* |||||| DISQUS |||||| */
 
 .disqus{
-	width: 500px;
+	width: 550px;
 	margin: auto;
+	/*border: 1px lightgray solid;*/
+	padding: 10px;
+	margin-bottom: 100px;
 }
 
-
+hr.style11 {
+	height: 6px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+    width: 600px;
+    margin-bottom: 20px;
+}
