@@ -8,30 +8,101 @@
 
 		<link href="assets/css/styles.css" rel="stylesheet" type="text/css">
 
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Noto+Serif:400,400i" rel="stylesheet">
+
 	</head>
 
+<!--|||||||||NAVIGATION|||||||||-->
+
+	<nav class="topnav" id="myTopnav">
+		<div class="topnavcenter">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+			<a href="index.html"><h4>Index</h4></a>
+			<a href="about.html"><h4>About</h4></a>
+			<a href="blogs.html"><h4>Blogs</h4></a>
+		</div>
+	</nav>
+
 <!--|||||||||BODY|||||||||-->
-	
+
+
 	<body>
-		<h1>Final Blog</h1>
+		<div id="maintitle"><h1>VICTORIANA</h1></div>
 
-		<div id="block"></div>
+		<div id="galleryscroll">
+			<div class="previews">
+				<div class="blogpreview">
+					<a href="blogs/finalblog1.html">
+						<img class="slide" src="assets/media/1.jpg">
+						<p>Blog #1</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog1.html">Blog #1</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog2.html">
+						<img class="slide" src="assets/media/2.jpg">
+						<p>Blog #2</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog2.html">Blog #2</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog3.html">
+						<img class="slide" src="assets/media/3.jpg">
+						<p>Blog #3</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog3.html">Blog #3</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog4.html">
+						<img class="slide" src="assets/media/4.jpg">
+						<p>Blog #4</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog4.html">Blog #4</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog5.html">
+						<img class="slide" src="assets/media/5.jpg">
+						<p>Blog #5</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog5.html">Blog #5</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog6.html">
+						<img class="slide" src="assets/media/6.jpg">
+						<p>Blog #6</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog6.html">Blog #6</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog7.html">
+						<img class="slide" src="assets/media/7.jpg">
+						<p>Blog #7</p>
+					</a>
+				</div>
 
-		<div class="link"><a href="blogs/finalblog7.html">Blog #7</a></div>
+				<div class="blogpreview">
+					<a href="blogs/finalblog8.html">
+						<img class="slide" src="assets/media/8.jpg">
+						<p>Blog #8</p>
+					</a></div>
+			</div>
+		</div>
 
-		<div class="link"><a href="blogs/finalblog8.html">Blog #8</a></div>
+	<div align="center">
+		<div class="buttons">
+			<button class="buttonlook" onclick="plusDivs(-1)">❮</button>
+			<button class="buttonno" onclick="currentDiv(1)">1</button> 
+ 			<button class="buttonno" onclick="currentDiv(2)">2</button> 
+ 			<button class="buttonno" onclick="currentDiv(3)">3</button> 
+ 			<button class="buttonno" onclick="currentDiv(4)">4</button> 
+ 			<button class="buttonno" onclick="currentDiv(5)">5</button> 
+ 			<button class="buttonno" onclick="currentDiv(6)">6</button> 
+ 			<button class="buttonno" onclick="currentDiv(7)">7</button> 
+ 			<button class="buttonno" onclick="currentDiv(8)">8</button> 
+ 			<button class="buttonlook" onclick="plusDivs(1)">❯</button>
+ 		</div>
+	</div>
+
 
 
 	</body>
