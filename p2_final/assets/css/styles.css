@@ -188,4 +188,10 @@ h1{
 	font-size: 32pt;
 }
 
+/* |||||| DISQUS |||||| */
+#disqus_thread{
+	width: 500px;
+	margin: auto;
+}
+
 
