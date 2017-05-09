@@ -46,15 +46,20 @@ body{
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .topnav a {display: none;}
   .topnav a.icon {
     float: right;
     display: block;
   }
+
+  body{
+  	margin-top: 0;
+  	min-width: 750px;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 751px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
@@ -112,6 +117,12 @@ footer{
 	margin: auto;
 }
 
+.previews a{
+	text-decoration: none;
+	color: #336b84;
+	font-size: 16pt;
+}
+
 .previews{
 	height: 400px;
 	overflow: scroll;
@@ -142,13 +153,14 @@ footer{
 	margin: 0 auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 	#maintitle{
 		position: static;
+		margin-top: 150px;
 		
-		font-size: 36px;
+		font-size: 42px;
 
-		color:  #336b84;
+		color:  #9ac5d8;
 	}
 
 	.blogheadspace{
@@ -156,7 +168,7 @@ footer{
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 751px) {
 	#maintitle{
 		position: absolute;
 
@@ -210,9 +222,10 @@ main{
 	color: #b2a283;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
 	main{
-		width: 500px;
+		width: 600px;
+		font-size: 18px;
 	}
 
 	.blogheader{
@@ -220,10 +233,9 @@ main{
 	}
 }
 
-@media (min-width: 601px) {
+@media (min-width: 751px) {
 	main{
-		max-width: 700px;
-		min-width: 600px;
+		width: 700px;
 	}
 
 	.blogheader{
@@ -281,10 +293,28 @@ hr.style11 {
     margin-bottom: 20px;
 }
 
+@media (max-width: 750px) {
+	.disqus{
+		width: 750px;
+	}
+
+}
+
+@media (min-width: 751px) {
+	.disqus{
+		width: 550px;
+	}
+}
+
 
 /* |||||| BUTTONS |||||| */
 
-
-.buttons{
+button{
 	border: none;
+	font-size: 16px;
+	font-family: 'Noto Serif', serif;
+
+	background-color: white;
+
 }
+
