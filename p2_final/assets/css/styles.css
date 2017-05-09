@@ -245,6 +245,17 @@ main{
 	}
 }
 
+a{
+	text-decoration: none;
+	color: gray;
+}
+
+a:hover{
+	text-decoration: none;
+	color: #5da2c0;
+	transition: 0.5s;
+}
+
 /* |||||| TEXT |||||| */
 
 .quote{
