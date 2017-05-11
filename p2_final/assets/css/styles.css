@@ -91,7 +91,7 @@ footer{
 /* |||||| INDEX ONLY |||||| */
 
 #maintitle{
-	width: 900px;
+	width: 100vw;
 	top: 200px;
 	margin: auto;
 	z-index: -10;
@@ -338,7 +338,7 @@ hr.style11 {
 
 @media (max-width: 750px) {
 	.disqus{
-		width: 750px;
+		width: 550px;
 	}
 
 }
