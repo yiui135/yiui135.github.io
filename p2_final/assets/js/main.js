@@ -1,5 +1,29 @@
+// -------- Page Fade --------
 
-// ---- Top Navigation ----
+$(document).ready(function() {
+    $("body").css("display", "none");
+ 
+    $("body").fadeIn(2000);
+ 
+    $("a.transition").click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(1000, redirectPage);      
+    });
+         
+    function redirectPage() {
+        window.location = linkLocation;
+    }
+});
+
+
+$(document).ready(function(){
+  $('img').hover(function(){
+    $(this).toggleClass('blur');
+  }); 
+});
+
+// -------- Top Navigation --------
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -10,7 +34,7 @@ function myFunction() {
     }
 }
 
-// ---- Index Slideshow ----
+// -------- Index Slideshow --------
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -37,3 +61,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }	
+
+$("slide").hover(function(){
+  $(this).toggleClass('excerpt');
+});

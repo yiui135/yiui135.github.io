@@ -56,6 +56,7 @@ body{
   body{
   	margin-top: 0;
   	min-width: 750px;
+  	max-width: 100vw;
   }
 }
 
@@ -90,13 +91,13 @@ footer{
 /* |||||| INDEX ONLY |||||| */
 
 #maintitle{
-	width: 100vw;
+	width: 900px;
 	top: 200px;
 	margin: auto;
 	z-index: -10;
 	margin-bottom: 30px;
+	overflow-x: hidden;
 
-	overflow: wrap;
 
 	text-align: center;
 	font-family: 'Noto Serif', serif;
@@ -128,6 +129,7 @@ footer{
 	overflow: scroll;
 	margin-top: 100px;
 	vertical-align: center;
+
 }
 
 .blogpreview{
@@ -141,12 +143,26 @@ footer{
 .slide{
 	view: none;
 	width: 300px;
-	height: 300px;
+	
 	margin: 10px;
-	background-color: goldenrod;
 	overflow: hidden;
 	margin: auto;
 	vertical-align: center;
+}
+
+.excerpt{
+	position: absolute; 
+   top: 200px; 
+   width:300px;
+   height: 300px;
+   padding: 30px;
+   vertical-align: center;
+
+   font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: black;
 }
 
 .buttons{
@@ -179,6 +195,16 @@ footer{
 	.blogheadspace{
 		display: show;
 	}
+}
+
+.blur{
+	-webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+	opacity: 0.9;
+	transition: 1s;
 }
 
 /* |||||| BLOGS ONLY |||||| */
@@ -280,6 +306,12 @@ h2{
 	color: #336b84;
 	font-size: 24px;
 	padding-top: 40px;
+	line-height: 30px;
+}
+
+h3{
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
 }
 
 h5{
