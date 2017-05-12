@@ -17,12 +17,6 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function(){
-  $('img').hover(function(){
-    $(this).toggleClass('blur');
-  }); 
-});
-
 // -------- Top Navigation --------
 
 function myFunction() {
@@ -61,3 +55,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }	
+
+
+
